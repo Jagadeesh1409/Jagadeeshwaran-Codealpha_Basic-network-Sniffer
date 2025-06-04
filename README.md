@@ -45,3 +45,18 @@ def packet_callback(packet):
 
 # Start sniffing packets
 sniff(prn=packet_callback, count=100, store=False)
+
+
+
+SAMPLE OUTPUT:
+Packet Captured:
+Source IP: 192.168.1.10
+Destination IP: 8.8.8.8
+Protocol: 17
+Payload: b'\x03\x0fExamplePayloadData'
+
+Packet Captured:
+Source IP: 192.168.1.5
+Destination IP: 192.168.1.1
+Protocol: 6
+Payload: b'GET /index.html HTTP/1.1\r\nHost: example.com\r\n'
